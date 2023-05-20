@@ -1,0 +1,7 @@
+ul {
+    list-style: none;
+}
+.buttonsFeedback {
+    display: flex;
+    gap: 10px;
+}

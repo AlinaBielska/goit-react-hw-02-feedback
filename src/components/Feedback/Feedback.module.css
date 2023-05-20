@@ -5,3 +5,8 @@ ul {
     display: flex;
     gap: 10px;
 }
+.buttonsStatistics {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}

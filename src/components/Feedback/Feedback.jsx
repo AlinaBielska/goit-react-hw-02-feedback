@@ -34,7 +34,7 @@ class Feedback extends Component {
                     <li><button type="button" onClick={() => this.changeFeedback("bad")}>Bad</button></li>
                 </ul>
                 <h2>Statistics</h2>
-                <ul>
+                <ul className={css.buttonsStatistics}>
                     <li>Good: <span>{this.state.good}</span></li>
                     <li>Neutral: <span>{this.state.neutral}</span></li>
                     <li>Bad: <span>{this.state.bad}</span></li>

@@ -34,7 +34,7 @@ changeFeedback = (item) => {
         alignItems: "center",
         margin: 0,
         padding: 0,
-        marginTop: 200,
+        marginTop: 150,
       }}>
         <Section title="Please leave feedback">
         <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback}></FeedbackOptions>

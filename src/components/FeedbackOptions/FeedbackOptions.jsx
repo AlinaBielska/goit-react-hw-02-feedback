@@ -5,16 +5,16 @@ import { nanoid } from 'nanoid';
 
 export default class FeedbackOptions extends Component {
     render () {
-    return (
-        <ul className={css.buttonsFeedback}>
-        {this.props.options.map((item) => (
-                <li key={nanoid()}>
-                <button className={`${css.btn} ${this.getButtonClass(item)}`} type="button" onClick={() => this.props.onLeaveFeedback(item)}>{item}</button>
-                </li>
-        ))}
-        </ul>
-    );
-    }
+        return (
+            <ul className={css.buttonsFeedback}>
+                {this.props.options.map((item) => (
+                    <li key={nanoid()}>
+                        <button className={`${css.btn} ${this.getButtonClass(item)}`} type="button" onClick={() => this.props.onLeaveFeedback(item)}>{item}</button>
+                    </li>
+                ))}
+            </ul>
+        );
+    };
 
     getButtonClass = (item) => {
     switch (item) {

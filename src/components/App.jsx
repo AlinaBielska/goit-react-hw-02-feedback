@@ -9,7 +9,7 @@ export class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0
-  }
+  };
 
 countTotalFeedback = () => {return this.state.good + this.state.neutral + this.state.bad};
 
@@ -37,12 +37,12 @@ changeFeedback = (item) => {
         marginTop: 150,
       }}>
         <Section title="Please leave feedback">
-        <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback}></FeedbackOptions>
+          <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback} />
         </Section>
         <Section title="Statistics">
-        {total === 0 ? 
-        <Notification message="There is no feedback"></Notification> : 
-        <Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positivePercentage}></Statistics>}
+          {total === 0 ?
+            <Notification message="There is no feedback" /> :
+            <Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positivePercentage} />}
         </Section>
       </div>
     );
